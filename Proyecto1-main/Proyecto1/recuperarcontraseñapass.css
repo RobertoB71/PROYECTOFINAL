@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(img/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.seccionrecuperar{
+    width: 400px;
+    height: 270px;
+    margin: auto;
+    margin-top: 180px;
+    padding: 20px 30px;
+    color: white;
+    background: #3a3737;
+}
+
+.seccionrecuperar h2{
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid;
+    font-size: 20px;
+}
+
+.llenar{
+    width: 100%;
+    border: 1px solid red;
+    margin-bottom: 15px;
+    padding:  11px 10px;
+    background: #252323;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.boton{
+    width: 100%;
+    height: 40px;
+    background: #017bab;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.seccionrecuperar h5{
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+.seccionrecuperar a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.seccionrecuperar a:hover{
+    text-decoration: underline;
+}

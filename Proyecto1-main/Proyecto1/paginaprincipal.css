@@ -1,0 +1,220 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-image: url(img/wallpaperflare.com_wallpaper.jpg);
+}
+/*Header*/
+header{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 3px gray;
+    text-transform: uppercase;
+}
+
+
+/*Cambios que hay que realizar*/
+header ul{
+    list-style: none;
+}
+
+header li{
+    display: inline-block;
+}
+
+header li a{
+    color: white;
+    text-decoration: none;
+    padding: 13px;
+}
+header li a:hover{
+    color: aqua;
+}
+
+/*Menú Hamburguesa*/
+.bars__menu{
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.bars__menu span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin-top: 6px;
+    transform-origin:0px 100%;
+    transition: all 600ms;
+}
+.activeline1__bars-menu{
+    transform: rotate(45deg) translate(-2px);
+}
+.activeline2__bars-menu{
+    opacity: 0;
+    margin-left: -30px;
+}
+.activeline3__bars-menu{
+    transform: rotate(-45deg) translate(-4px,2px);
+}
+/*Hasta aquí llega el menú hamburguesa*/
+.Contenedorflex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.conf{
+    display: flex;
+    justify-content:space-between;
+    margin-left: 90px;
+}
+
+.Contenedorflex{
+    display: flex;
+    align-items: center;
+    
+}
+
+#conf{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 75%;
+    grid-gap: 30px;
+    }
+    
+#conf img{
+    width: 98%;
+    transition: all 300ms;
+    position: flex;
+    margin: 10%;
+}
+    
+#conf img:hover{
+    transform: scale(1.15,1.15);
+ }
+
+.msr-top-20{
+    margin-top: 30px;
+    color: gold;
+}
+/*footer*/
+.conf22 img{
+    width: 40%;
+    padding: 15px;
+   
+}
+.conf22 {
+    margin-right: 35px;
+}
+
+.conf2{
+    display: flex;
+    justify-content:space-between;
+    margin-left: 15px;
+    padding: 15px;
+}
+
+.conf3{
+    display: flex;
+    justify-content:space-between;
+    margin-left: 20px;
+}
+
+.conf3 h2{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.conf4{
+    display: flex;
+    justify-content:space-between;
+    list-style-type: none;
+    text-align: center;
+}
+
+.conf4 h2{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+
+.conf img{
+    padding: 15px;
+    width: 100%;
+    margin-left: 18px;
+}
+
+footer img{
+    width: 5%;
+}
+
+
+.ultima{
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+/*Menu*/
+@media screen and (max-width:1300px){
+    .menu{
+        display: flex;
+        justify-content: end;
+    }
+    .bars__menu{
+        display: block;
+    }
+    header{
+        padding: 20px;
+    }
+    /*Tamaño y posición*/
+   .NavB{ 
+    position: absolute;
+    top: -1000px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: black;
+    transition: 0.2s;
+   }
+   /*Fin de tamaño y posición*/
+   /*Cómo van acomodado el menú*/
+   .NavB ul li{
+    display: block;
+    width: fit-content;
+    margin: 14px auto 14px auto;
+    text-align: center;
+   }
+   /*Cómo va acomodado el menú*/
+    
+}
+    /*Footer tamaños letras*/
+    footer{
+        height: 250px;
+        width: 100%;
+    }
+    footer h5{
+        font-size: 13px;
+    }
+    footer h2{
+        font-size: 10px;
+    }
+    footer h4{
+        font-size: 9px;
+    }
+    footer img{
+        width: 7%;
+    }
+    /*Footer final*/
+   
+
+    /*Footer Secciones tamaño*/
+    
+    /*Footer Secciones tamaño final*/

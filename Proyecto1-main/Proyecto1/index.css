@@ -1,0 +1,277 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-image: url(img/wallpaperflare.com_wallpaper.jpg);
+    background-color: black;
+}
+/*Header*/
+header{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 3px gray;
+    text-transform: uppercase;
+}
+header ul{
+    list-style: none;
+}
+header li{
+    display: inline-block;
+}
+header li a{
+    color: white;
+    text-decoration: none;
+    padding: 13px;
+}
+header li a:hover{
+    color: aqua;
+}
+.banner{
+    width: 100%;
+}
+h1{
+    color: gold;
+    font-size: 30px;
+}
+/*MENU*/
+.bars__menu{
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.bars__menu span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin-top: 6px;
+    transform-origin:0px 100%;
+    transition: all 600ms;
+}
+.activeline1__bars-menu{
+    transform: rotate(45deg) translate(-2px);
+}
+.activeline2__bars-menu{
+    opacity: 0;
+    margin-left: -30px;
+}
+.activeline3__bars-menu{
+    transform: rotate(-45deg) translate(-4px,2px);
+}
+.reportee div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.reporteediv h1{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.reportee h2{
+    margin-top: 15px;
+    color: gold;
+}
+.reportee h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: white;
+}
+.reportee p{
+    width: 30%;
+    color: white;
+}
+.reportee hr{
+    color: black;
+}
+.reportee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+header li a{
+    color: white;
+    text-decoration: none;
+}
+.contacto hr{
+    margin-top: 10px;
+    color: black;
+    width: 75%;
+}
+
+
+
+
+
+
+/*footer*/
+.conf22 img{
+    width: 40%;
+    padding: 15px;
+   
+}
+.conf22 {
+    margin-right: 35px;
+}
+
+.conf2{
+    display: flex;
+    justify-content:space-between;
+    margin-left: 15px;
+    padding: 15px;
+}
+
+.conf3{
+    display: flex;
+    justify-content:space-between;
+    margin-left: 20px;
+}
+
+.conf3 h2{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.conf4{
+    display: flex;
+    justify-content:space-between;
+    list-style-type: none;
+    text-align: center;
+}
+
+.conf4 h2{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.conf img{
+    padding: 15px;
+    width: 100%;
+    margin-left: 18px;
+}
+
+footer img{
+    width: 5%;
+}
+
+.ultima{
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+/*Fin footer*/
+
+/* Página web responsive*/
+
+/*Menú responsivo */
+@media screen and (max-width:1300px){
+    .menu{
+        display: flex;
+        justify-content: end;
+    }
+    .bars__menu{
+        display: block;
+    }
+    header{
+        padding: 20px;
+    }
+    /*Tamaño y posición*/
+   .NavB{ 
+    position: absolute;
+    top: -1000px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: black;
+    transition: 0.2s;
+   }
+   .NavB ul li{
+    display: block;
+    width: fit-content;
+    margin: 14px auto 14px auto;
+    text-align: center;
+   }
+}
+@media screen and (max-width:900px) {
+
+    .reportee div h1{
+        color: gold;
+        font-size: 40px;
+        text-align: center;
+    }
+    .reportee h2{
+        color: gold;
+        font-size: 40px;
+        text-align: center;
+    }
+    .reportee h3{
+        color: white;
+        font-size: 30px;
+        text-align: center;
+    }
+    .reportee p{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+    footer h5{
+        color: white;
+        font-size: 10px;
+    }
+    footer h2{
+        font-size: 12px;
+    }
+    footer h4{
+        font-size: 10px;
+    }
+    
+}
+@media screen and (max-width:750px){
+    .reportee div h1{
+        font-size: 40px;
+        color: gold;
+    }
+    .reportee h2{
+        font-size: 20px;
+    }
+    .reportee h3{
+        font-size: 15px;
+    }
+    .reportee p{
+        font-size: 10px;
+    }
+
+    br{
+        font-size: 1px;
+    }
+    .reportee p{
+        width: 50%;
+    }
+    footer{
+        height: 250px;
+        width: 100%;
+    }
+    footer h5{
+        font-size: 13px;
+    }
+    footer h2{
+        font-size: 10px;
+    }
+    footer h4{
+        font-size: 9px;
+    }
+    footer img{
+        width: 7%;
+    }
+}

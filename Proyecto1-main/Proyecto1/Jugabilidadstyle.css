@@ -1,0 +1,315 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color:black;
+}
+/*HEADER*/
+header{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 3px gray;
+    text-transform: uppercase;
+}
+header ul{
+    list-style: none;
+}
+header li{
+    display: inline-block;
+}
+header li a{
+    color: white;
+    text-decoration: none;
+    padding: 13px;
+}
+header li a:hover{
+    color: aqua;
+}
+.banner{
+    width: 100%;
+}
+
+/*Menú*/
+.bars__menu{
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.bars__menu span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin-top: 6px;
+    transform-origin:0px 100%;
+    transition: all 600ms;
+}
+.activeline1__bars-menu{
+    transform: rotate(45deg) translate(-2px);
+}
+.activeline2__bars-menu{
+    opacity: 0;
+    margin-left: -30px;
+}
+.activeline3__bars-menu{
+    transform: rotate(-45deg) translate(-4px,2px);
+}
+/*SECTIONS*/
+.contacto div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.contacto div h1{
+    font-size: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    margin-top: 15px;
+    color: white;
+}
+.contacto div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.contacto div h1{
+    font-size: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    margin-top: 15px;
+    color: gold;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacto hr{
+    margin-top: 10px;
+    color: black;
+    width: 75%;
+}
+.boton-t{
+    text-align: center;
+    background-color: black;
+    width: 10px;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px;
+    padding: 20px;
+    align-self: center;
+    font-size: medium;
+    font-weight: bold;
+    border: solid  black;
+    color: gold;
+}
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 20px;
+
+}
+.cont-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 20px;
+}
+.cont-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 20px;
+}
+.info{
+display: flex;
+width: 100%;
+height: 80%;
+background: white;
+border-radius: 2px;
+box-shadow: 1px 1px 4px 2px	rgb(255,255,255,.2);
+justify-content: center;
+}
+.header{
+    border-right: 1px solid #ddd;
+}
+.descripcion{
+    background: white;
+}
+.header .descripcion{
+    padding: 10px;
+    text-align: center;
+}
+.header img{
+    position: flex;
+    display: flex;
+    width: 500px;
+    height: 100%;
+}
+.titulo{
+    font-size: 50px;
+}
+.descripcion p{
+    margin: 20px 30px;
+    text-align: center;
+}
+.desc{
+    font-size: 30px;
+}
+/*Footer*/
+.conf22 img{
+    width: 40%;
+    padding: 15px;
+   
+}
+.conf22 {
+    margin-right: 35px;
+}
+
+.conf2{
+    display: flex;
+    justify-content:space-between;
+    margin-left: 15px;
+    padding: 15px;
+}
+
+.conf3{
+    display: flex;
+    justify-content:space-between;
+    margin-left: 20px;
+}
+
+.conf3 h2{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.conf4{
+    display: flex;
+    justify-content:space-between;
+    list-style-type: none;
+    text-align: center;
+}
+.conf4 h2{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.conf img{
+    padding: 15px;
+    width: 100%;
+    margin-left: 18px;
+}
+footer img{
+    width: 5%;
+}
+.ultima{
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+/*RESPONSIVE*/
+/*MAIN*/
+@media (max-width:850px){
+.contacto div h1{
+    font-size: 25px;
+    text-align: center;
+    color: gold;
+}
+.titulo {
+    font-size: 35px;
+}
+.desc{
+    font-size: 25px;
+}
+.cont{
+    height: 100%;
+}
+.cont-2{
+    height: 100%;
+}
+.cont-3{
+    height: 100%;
+}
+.info{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.header{
+    padding: 20px 20px 5px 20px;
+    border: none;
+}
+.header img{
+    position: flex;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.descripcion{
+    padding: 5px 20px 20px 20px;
+    background: transparent;
+}
+}
+/*Menu*/
+@media screen and (max-width:1300px){
+.menu{
+    display: flex;
+    justify-content: end;
+}
+.bars__menu{
+    display: block;
+}
+header{
+    padding: 20px;
+}
+    /*Tamaño y posición*/
+.NavB{ 
+    position: absolute;
+    top: -1000px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: black;
+    transition: 0.2s;
+}
+   /*Cómo van acomodado el menú*/
+.NavB ul li{
+    display: block;
+    width: fit-content;
+    margin: 14px auto 14px auto;
+    text-align: center;
+}  
+}
+/*Footer tamaños letras*/
+footer{
+    height: 250px;
+    width: 100%;
+}
+footer h5{
+    font-size: 13px;
+}
+footer h2{
+    font-size: 10px;
+}
+footer h4{
+    font-size: 9px;
+}
+footer img{
+    width: 7%;
+}
