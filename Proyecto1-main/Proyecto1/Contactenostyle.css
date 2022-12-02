@@ -5,14 +5,15 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
-    background-image:url(img/banner/banner3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
-}
 
+    background-image: url(img/fondomoon.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    } 
+/*Header*/
 header{
-    background-color: black;
+    background-color: #153a58;
     color: white;
     padding: 15px;
     text-align: center;
@@ -82,7 +83,7 @@ h1{
     display: flex;
     justify-content: center;
     width: 80%;
-    background-color: black; 
+    background-color: #0a1a2a;
 }
 .centrar{
     display: flex;
@@ -104,7 +105,7 @@ h1{
     width: 50%;
 }
 .comidita{
-    color: white;
+    color: gold;
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -120,75 +121,78 @@ h1{
 }
 /*Aquí termina*/
 /*footer*/
-/*Cajas del footer*/
-.conf22 {
-    margin-left: 10%;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
-
-.conf2{
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #153a58;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content:space-between;
-    padding: 10%;
-}
-
-.conf3{
-    display: flex;
-    justify-content:space-between;
-    margin-left: 15%;
-    margin-right: 1%;
-}
-
-.conf3 h2{
-    text-decoration: underline;
-    text-transform: uppercase;
-}
-.conf4{
-    display: flex;
-    justify-content:space-between;
-    list-style-type: none;
-    text-align: center;
- 
-}
-
-.conf4 h2{
-    text-decoration: underline;
-    text-transform: uppercase;
-}
-
-.ultima{
-    background-color: black;
-    color: white;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
     text-align: center;
+    transition: all 300ms ease;
 }
-/*Cajas del footer*/
-/*Imágenes del footer*/
-/*Imagen de ESPORTS*/
-.conf22 img{
-
-    width: 80%;
-
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
 }
-/*Fin Imagen de ESPORTS*/
-/*Imagen de REDES SOCIALES*/
-
-.conf4 img{
-    width: 10%;
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
 }
-
-/*fin de imagen de REDES SOCIALES */
-/*Fin imágenes del footer*/
-/*Fin footer*/
-
-/*Menú responsive*/
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
 @media screen and (max-width:1300px){
     .menu{
         display: flex;
         justify-content: end;
     }
     .bars__menu{
-        display: block;
+        display: block
+;
     }
     header{
         padding: 20px;
@@ -200,9 +204,14 @@ h1{
     left: 0;
     right: 0;
     width: 100vw;
-    background: black;
+    background: #0a1a2a;
     transition: 0.2s;
    }
+   header li a{
+    color: gold;
+    text-decoration: none;
+    padding: 13px;
+}
    /*Fin de tamaño y posición*/
    /*Cómo van acomodado el menú*/
    .NavB ul li{
@@ -212,165 +221,12 @@ h1{
     text-align: center;
    }
    /*Cómo va acomodado el menú*/
-    
-   /*Desde aquí comienza el responsive de esta página(letras y demás)*/
-
-   /*Tamaño de acerca de nuestra página*/
-   .contacto div h1{
-    font-size: 26px;
-   }
-   /*Hasta aquí llega el de acerca de nuestra página*/
-
-   /*Esta es una organización de...*/
-   .contacto h2{
-    font-size: 14px;
-   }
-   /*Final de esta es una organización de...*/
-   /*Actualmente, presentamos equipos...*/
-   .contacto h3{
-    font-size: 13px;
-   }
-   /*Final de actualmente*/
-
-   .contacto p{
-    font-size: 12px;
-   }
-
-   /*Tamaño footer*/
-   footer{
-    height: 56vw;
-    width: 100%;
 }
-   /*Fin tamaño footer*/
-}
-/*Menú responsivo final*/
-
-@media screen and (max-width:900px){
-    /*Consulta y demás*/
-      /*Aquí comienza todo lo del enviar*/
-    .fle{
-        margin-bottom: 10px;
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
     }
-    .fle {
-        margin-top: 25px;
-    }
-    h1{
-        color: gold;
-    }
-   
-    .inputS{
-        margin-top: 7px;
-        padding: 8px 9px;
-    }
-    .inputL{
-        margin-top: 7px;
-        padding: 45px 50px;
-    }
-    /*Letras que le cambian el tamaño*/
-    .dudas{
-        margin-top: 10px;
-        font-size: 12px;
-    }
-    .comidita{
-        font-size: 10px;
-    }
-    /*Letras que le cambian el tamaño*/
-    .superior{
-        margin-top: 25px;
-    }
-    .env{
-        margin-bottom: 7px;
-    }
-    /*Aquí termina*/
-        /*Consulta y demás final*/
-
-    /*Footer tamaños*/    
-    footer{
-        height: 55vw;
-        width: 100%;
-    }
-    footer h5{
-        font-size: 10px;
-    }
-    footer h2{
-        font-size: 12px;
-    }
-    footer h4{
-        font-size: 10px;
-    }
-    /*Finalización footer tamaños*/
-}
-@media screen and (max-width:750px){
-    /*Tamaño de la página*/
-     /*Consulta y demás*/
-      /*Aquí comienza todo lo del enviar*/
-      .fle{
-        margin-bottom: 20px;
-    }
-    .fle {
-        margin-top: 25px;
-    }
-    h1{
-        color: gold;
-    }
-   
-    .inputS{
-        margin-top: 7px;
-        padding: 4px 2px;
-    }
-    .inputL{
-        margin-top: 7px;
-        padding: 25px 30px;
-    }
-    /*Letras que le cambian el tamaño*/
-    .dudas{
-        margin-top: 10px;
-        font-size: 6.5px;
-    }
-    .comidita{
-        font-size: 6.5px;
-        color: gold;
-    }
-    /*Letras que le cambian el tamaño*/
-    .superior{
-        margin-top: 25px;
-    }
-    .env{
-        font-size: 7px;
-        margin-bottom: 7px;
-    }
-    /*Aquí termina*/
-        /*Consulta y demás final*/
-    /*Tamaño de la página*/
-    /*Footer tamaños letras*/
-    footer{
-        height: 100vw;
-        width: 100%;
-    }
-    footer h5{
-        font-size: 13px;
-    }
-    footer h2{
-        font-size: 10px;
-    }
-    footer h4{
-        font-size: 9px;
-    }
-    footer img{
-        width: 7%;
-    }
-    /*Footer final*/
-   
-
-    /*Footer Secciones tamaño*/
-    
-    /*Footer Secciones tamaño final*/
-}
-
-@media screen and (max-width:450px){
-    /*Tamaño footer*/
-   footer{
-    height: 80vw;
-}
-   /*Fin tamaño footer*/
 }
