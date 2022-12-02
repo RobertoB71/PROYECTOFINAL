@@ -1,13 +1,14 @@
 let baseUrl="http://localhost:8080";
 
-
-function GuardarContacto(){
+function RegistrarUsuario(){
     let data = {
-        nombre:document.getElementById("nombre").value,
         correo:document.getElementById("correo").value,
-        comentario:document.getElementById("comentario").value
+        nombre:document.getElementById("nombre").value,
+        apellido:document.getElementById("apellido").value,
+        contraseña:document.getElementById("contraseña").value
     };
-    fetch(baseUrl+"/contacto",{
+
+    fetch(baseUrl+"/Registro",{
         method:"POST",
         body: JSON.stringify(data),
         headers:{

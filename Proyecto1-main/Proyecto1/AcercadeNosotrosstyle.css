@@ -70,7 +70,10 @@ header li a:hover{
 /*HASTA AQUÍ*/
 
 /*Parte de abajo Contenido de la página*/
-
+.texto{
+    text-align: center;
+    text-overflow: initial;
+}
 .contacto div{
     display: flex;
     flex-direction: column;
