@@ -4,6 +4,8 @@ box_search =        document.getElementById("box-search");
 
 document.getElementById("inputSearch").addEventListener("keyup", buscador_interno);
 
+
+
 function buscador_interno(){
 
 

@@ -10,6 +10,8 @@
 body{
    background-image: url(img/hermoso-fondo-gris-claro-abstracto-textura-grunge_169236-192.webp);
    background-size: cover;
+   background-size: center center; 
+   background-attachment: fixed;
 }
 
 .wrapper{
@@ -111,3 +113,4 @@ body{
   display: block;
   font-size: 18px;
 }
+

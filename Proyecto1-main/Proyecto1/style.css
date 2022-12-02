@@ -10,6 +10,10 @@ body{
     background-image: url(img/light-gray-background-with-bubbles-vector.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-size: center center; 
+    background-attachment: fixed;
+    
+
 }
 
 .seccionlogin{
@@ -53,6 +57,21 @@ body{
     margin-bottom: 16px;
     text-transform: uppercase;
 }
+
+.boton2{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 98px;
+    height: 40px;
+    background: #017bab;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    
+}
+
 
 .seccionlogin p{
     height: 40px;
