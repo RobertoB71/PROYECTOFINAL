@@ -4,9 +4,16 @@
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+body{
+    background-image: url(img/fondomoon.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 /*SE COPIA DESDE AQUÍ*/
 header{
-    background-color: black;
+    background-color: #153a58;
     color: white;
     padding: 15px;
     text-align: center;
@@ -71,61 +78,96 @@ header li a:hover{
 }
 
 /*footer*/
-.conf22 img{
-    width: 40%;
-    padding: 15px;
-   
-}
-.conf22 {
-    margin-right: 35px;
+/*COPIAR ESTO ANGEL ++++++++++++++   */
+
+
+@media screen and (max-width:1600px){
+    header li a{
+        color: gold;
+        text-decoration: none;
+        padding: 13px;
+    }
+    
 }
 
-.conf2{
-    display: flex;
-    justify-content:space-between;
-    margin-left: 15px;
-    padding: 15px;
-}
 
-.conf3{
-    display: flex;
-    justify-content:space-between;
-    margin-left: 20px;
-}
+/*footer*/
 
-.conf3 h2{
-    text-decoration: underline;
-    text-transform: uppercase;
-}
-.conf4{
-    display: flex;
-    justify-content:space-between;
-    list-style-type: none;
-    text-align: center;
-}
 
-.conf4 h2{
-    text-decoration: underline;
-    text-transform: uppercase;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
-
-.conf img{
-    padding: 15px;
+/*:::::Pie de Pagina*/
+.pie-pagina{
     width: 100%;
-    margin-left: 18px;
+    background-color: #153a58;
 }
-
-footer img{
-    width: 5%;
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
 }
-
-.ultima{
-    background-color: black;
-    color: white;
-    justify-content: space-between;
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
 }
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+/*COPIAR HASTA ACÁ ANGEL ++++++++++++++   */
 
 /*Fin footer*/
 
@@ -150,7 +192,7 @@ footer img{
     left: 0;
     right: 0;
     width: 100vw;
-    background: black;
+    background:#0a1a2a;
     transition: 0.2s;
    }
    /*Fin de tamaño y posición*/
@@ -248,7 +290,6 @@ footer img{
 
 /*Inicio de Div*/
 #ctn-bars-search{
-    background-image: url(img/wallpaperflare.com_wallpaper.jpg);
     width: 100%;
     height: 100vh;
     
@@ -264,7 +305,7 @@ footer img{
     overflow: hidden;
     display: none;
 
-    background-color: black;
+    background-color: #153a58;
     opacity: 55%;
 }
 
@@ -398,7 +439,7 @@ input{
 #ctn-bars-search h1{
     padding: -5px;
     margin: 5px;
-    background-color: black;
+    background-color: #153a58;
     color: gold;
 
     opacity: 90%;  
