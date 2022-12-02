@@ -4,18 +4,23 @@
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-/*HEADER*/
 body{
-    background-color: black;
-}
+
+    background-image: url(img/fondomoon.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    } 
+/*Header*/
 header{
-    background-color: black;
+    background-color: #153a58;
     color: white;
     padding: 15px;
     text-align: center;
     box-shadow: 0 0 3px gray;
     text-transform: uppercase;
 }
+/*Cambios que hay que realizar*/
 header ul{
     list-style: none;
 }
@@ -30,7 +35,7 @@ header li a{
 header li a:hover{
     color: aqua;
 }
-/*MENU*/
+/*Menú Hamburguesa*/
 .bars__menu{
     display: none;
     width: 30px;
@@ -92,163 +97,113 @@ p{
     font-size: 25px;
     text-align: center;
 }
-/*Footer*/
-.conf22 img{
-    width: 40%;
-    padding: 15px;
-   
-}
-.conf22 {
-    margin-right: 35px;
-}
-
-.conf2{
-    display: flex;
-    justify-content:space-between;
-    margin-left: 15px;
-    padding: 15px;
-}
-
-.conf3{
-    display: flex;
-    justify-content:space-between;
-    margin-left: 20px;
-}
-
-.conf3 h2{
-    text-decoration: underline;
-    text-transform: uppercase;
-}
-.conf4{
-    display: flex;
-    justify-content:space-between;
-    list-style-type: none;
-    text-align: center;
-}
-
-.conf4 h2{
-    text-decoration: underline;
-    text-transform: uppercase;
-}
-
-.conf img{
-    padding: 15px;
-    width: 100%;
-    margin-left: 18px;
-}
-
-footer img{
-    width: 5%;
-}
-
-.ultima{
-    background-color: black;
-    color: white;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
-@media (max-width:850px){
-.banner h1{
-    font-size: 30px;
-    text-align: center;
-}
-.titulo{
-    text-align: center;
-}
-.desc{
-    font-size: 20px;
-    text-align: center;
-}
-.desc{
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-.desc :before, *:after {
+/*footer*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
-.desc{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #153a58;
 }
-.grupo h1{
-    font-size: 30px;
-    text-align: center;
-    color: gold;
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
 }
-.cont{
-    height: 100%;
-}
-.cont-2{
-    height: 100%;
-}
-.info{
-display: block;
-width: 100%;
-height: 100%;
-}
-.header{
-    padding: 20px 20px 5px 20px;
-    border: none;
-}
-.header img{
-    position: flex;
-    display: flex;
+.pie-pagina .grupo-1 .box figure{
     width: 100%;
     height: 100%;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.descripcion{
-padding: 5px 20px 20px 20px;
-background: transparent;
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
 }
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
 }
 @media screen and (max-width:1300px){
-.menu{
-    display: flex;
-    justify-content: end;
-}
-.bars__menu{
-    display: block;
-}
-header{
-    padding: 20px;
-}
-.NavB{ 
+    .menu{
+        display: flex;
+        justify-content: end;
+    }
+    .bars__menu{
+        display: block
+;
+    }
+    header{
+        padding: 20px;
+    }
+    /*Tamaño y posición*/
+   .NavB{ 
     position: absolute;
     top: -1000px;
     left: 0;
     right: 0;
     width: 100vw;
-    background: black;
+    background: #0a1a2a;
     transition: 0.2s;
+   }
+   header li a{
+    color: gold;
+    text-decoration: none;
+    padding: 13px;
 }
-.NavB ul li{
+   /*Fin de tamaño y posición*/
+   /*Cómo van acomodado el menú*/
+   .NavB ul li{
     display: block;
     width: fit-content;
     margin: 14px auto 14px auto;
     text-align: center;
-}  
+   }
+   /*Cómo va acomodado el menú*/
 }
-@media screen and (max-width:750px){
-   /*Footer tamaños letras*/
-   footer{
-    height: 250px;
-    width: 100%;
-}
-footer h5{
-    font-size: 13px;
-}
-footer h2{
-    font-size: 10px;
-}
-footer h4{
-    font-size: 9px;
-}
-footer img{
-    width: 7%;
-}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
 }
