@@ -247,7 +247,7 @@ footer img{
 }
 
 /*Inicio de Div*/
-.contenedor{
+#ctn-bars-search{
     background-image: url(img/wallpaperflare.com_wallpaper.jpg);
     width: 100%;
     height: 100vh;
@@ -256,12 +256,32 @@ footer img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
+
+#box-search{
+    width: 350px;
+    overflow: hidden;
+    display: none;
+
+    background-color: black;
+    opacity: 55%;
+}
+
+#box-search a{
+    color: gold;
+    text-decoration: none;
+    margin: 130px;
+    padding: auto;
+
+}
+
 /*Fin de Div*/
 
 h1{
     font-size: 50px;
     height: 89px;
+    width: 350px;
 }
 
 
@@ -271,80 +291,118 @@ input{
     width: 350px;
     margin: 3px;
 }
-
-.Boton{
-    background-color: black;
-    color: gold;
-    
-
-}
 /*Fin de los Input*/
 
 /*Inicio de Responsive*/
 @media screen and (max-width:1300px){
-    .contenedor h1{
-        font-size: 45px;
-        height: 60px;
-    }
-    
-    .contenedor input{
-        height: 30px;
-        width: 300px;
-        margin: 3px;
-    }
-}
-
-@media screen and (max-width:900px){
-    .contenedor h1{
-        font-size: 35px;
-        height: 50px;
-    }
-    
-    .contenedor input{
-        height: 30px;
-        width: 250px;
-        margin: 3px;
-    }
-}
-
-@media screen and (max-width:750px){
-    .contenedor h1{
-        font-size: 30px;
-        height: 40px;
-    }
-    
-    .contenedor input{
-        height: 30px;
-        width: 150px;
-        margin: 3px;
-    }
-}
-
-@media screen and (max-width:347px){
-    .contenedor h1{
+    #ctn-bars-search h1{
         font-size: 30px;
         height: 89px;
+        width: 350px;
         align-items: center;
         justify-content: center;
         display: flex;
         flex-direction: column;
     }
     
-    .contenedor input{
+    #ctn-bars-search input{
+        height: 30px;
+        width: 350px;
+        margin: 3px;
+    }
+
+    #box-search ul li a{
         height: 30px;
         width: 150px;
         margin: 3px;
     }
+
+
 }
 
-.contenedor h1{
+@media screen and (max-width:900px){
+    #ctn-bars-search h1{
+        font-size: 30px;
+        height: 89px;
+        width: 353px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #ctn-bars-search input{
+        height: 30px;
+        width: 353px;
+        margin: 3px;
+    }
+
+    #box-search ul li a{
+        height: 30px;
+        width: 150px;
+        margin: 3px;
+    }
+
+}
+
+@media screen and (max-width:750px){
+    #ctn-bars-search h1{
+        font-size: 30px;
+        height: 89px;
+        width: 350px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #ctn-bars-search input{
+        height: 30px;
+        width: 350px;
+        margin: 3px;
+    }
+
+    #box-search ul li a{
+        height: 30px;
+        width: 150px;
+        margin: 3px;
+    }
+
+}
+
+@media screen and (max-width:412px){
+    #ctn-bars-search h1{
+        font-size: 30px;
+        height: 89px;
+        width: 350px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #ctn-bars-search input{
+        height: 30px;
+        width: 350px;
+        margin: 3px;
+    }
+
+    #box-search ul li a{
+        height: 30px;
+        width: 150px;
+        margin: 3px;
+    }
+
+}
+
+#ctn-bars-search h1{
     padding: -5px;
     margin: 5px;
+    background-color: black;
     color: gold;
 
-
+    opacity: 90%;  
   }
-
 
 /*Final de Responsive*/
 
